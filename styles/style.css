@@ -120,7 +120,7 @@ textarea:not([rows]) {
 /* colors */
 .main-banner {
   position: relative;
-  background-image: url("../../../img/main_banner.webp");
+  background-image: url("../img/main_banner.webp");
   max-width: 1440px;
   width: 100%;
   height: 900px;
@@ -130,7 +130,7 @@ textarea:not([rows]) {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-banner {
-    background-image: url("../../../img/main_banner@2x.webp");
+    background-image: url("../img/main_banner@2x.webp");
   }
 }
 @media (max-width: 985px) {
