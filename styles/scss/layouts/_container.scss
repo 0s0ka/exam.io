@@ -1,0 +1,177 @@
+.main-banner {
+  position: relative;
+  background-image: url("../../../img/main_banner.webp");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/main_banner@2x.webp");
+  }
+  max-width: 1440px;
+  width: 100%;
+  height: 900px;
+
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 985px) {
+    background-size: cover;
+  }
+}
+
+.container {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+
+  max-width: 456px;
+  width: 100%;
+  max-height: 900px;
+  height: 100%;
+  padding: 48px;
+
+  background-color: $white-color;
+
+  .logo__top-wr {
+    .logo__top {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+  h1 {
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 24px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    .form__lb-login {
+    }
+    .form__lb-password .label__input {
+      margin-bottom: 20px;
+    }
+  }
+  .switch-link-wr {
+    position: relative;
+    display: flex;
+    margin-bottom: 24px;
+
+    p {
+      color: $black;
+      font-family: "SF Pro Display";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+    }
+    &__switch {
+      margin-right: 8px;
+    }
+    &__link {
+      position: absolute;
+      right: 0;
+
+      color: $blue;
+      text-align: right;
+      font-family: "SF Pro Display";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+    }
+  }
+  .sign-in-button {
+    margin-bottom: 64.5px;
+    &:hover {
+      background-color: #3295ff;
+    }
+  }
+  .sign-google-bitton {
+    padding: 10px 16px;
+    flex-direction: row;
+    background-color: $black;
+    margin-bottom: 24px;
+
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    font-weight: 400;
+    &:hover {
+      background-color: rgb(79, 79, 79);
+    }
+
+    img {
+      margin-right: 8px;
+    }
+  }
+  .create-account {
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin-bottom: 70px;
+
+    &__span {
+      color: $blue;
+      text-align: right;
+      font-family: "SF Pro Display";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.3px;
+
+      margin-left: 8px;
+    }
+  }
+  .logo__footer-wr {
+    visibility: hidden;
+    .logo__footer {
+      justify-content: center;
+      margin-bottom: 70px;
+      .logo__name {
+        padding-top: 0;
+      }
+    }
+    @media (max-width: 375px) {
+      visibility: visible;
+    }
+  }
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+
+    &__figma {
+      display: flex;
+      align-items: center;
+
+      color: $blue;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.4px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 4px;
+      }
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      right: 0;
+      bottom: 0;
+      color: #666;
+      font-family: "Roboto";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.4px;
+    }
+  }
+}
